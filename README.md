@@ -10,4 +10,4 @@ Contemplando también el diseño responsivo para que pueda verse tanto en dektop
 
 ### Puedes realizar una visualización de la página en el siguiente link
 
-Link:
+Link: https://nicopieroa.github.io/InteractiveCardDetailsForm-Practice/
