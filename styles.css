@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100vw;
+  height: 100vh;
+  font-family: "Alexandria", sans-serif;
+  display: flex;
+}
+
+.cardsImgContainer {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.gradientColorContainer {
+  width: 70%;
+  height: 100%;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(141, 163, 216),
+    rgb(13, 83, 162)
+  );
+}
+
+.whiteSpace {
+  width: 30%;
+}
+
+.imageContainer {
+  width: 80%;
+  position: absolute;
+  top: 10vh;
+  left: 25%;
+}
+
+.imageContainer img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.formContainer {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formContainer form {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.flexRow {
+  display: flex;
+  gap: 20px;
+}
+
+.inputs {
+  width: auto;
+  height: 50px;
+  border-radius: 10px;
+  border: rgb(202, 197, 197) 1px solid;
+  color: gray;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.inputs:focus {
+  border: none;
+}
+
+.formContainer form button {
+  background-color: rgb(6, 56, 121);
+  color: white;
+  height: 50px;
+  width: auto;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.formContainer form button:hover {
+  background-color: rgb(50, 100, 167);
+}
+
+.errorMessage {
+  color: red;
+}
+
+/* .monthYearInputs .monthYear {
+  max-width: 50%;
+}
+
+.monthYearInputs .cvc {
+  width: 50%;
+} */
+
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+
+  .cardsImgContainer {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .gradientColorContainer {
+    width: 100%;
+  }
+
+  .whiteSpace {
+    width: 0;
+  }
+
+  .imageContainer {
+    width: 65%;
+    height: auto;
+    top: 0;
+    left: 15%;
+  }
+
+  .formContainer {
+    width: 100%;
+    padding-top: 10%;
+  }
+
+  .formContainer form {
+    row-gap: 30px;
+  }
+
+  .flexColumn {
+    row-gap: 10px;
+  }
+
+  .inputs {
+    height: 60px;
+  }
+
+  .formContainer form button {
+    height: 70px;
+  }
+}

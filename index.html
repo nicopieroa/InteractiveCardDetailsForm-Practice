@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alexandria&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Interactive Card Details Form</title>
+  </head>
+  <body>
+    <div class="cardsImgContainer">
+      <div class="gradientColorContainer"></div>
+      <div class="whiteSpace"></div>
+      <div class="imageContainer">
+        <img
+          src="Images/19058336_6089343-removebg-preview.png"
+          alt="Front and back credit card"
+        />
+      </div>
+    </div>
+    <div class="formContainer">
+      <form action="">
+        <div class="flexColumn">
+          <label for="CARDHOLDER NAME">CARDHOLDER NAME</label>
+          <input
+            type="text"
+            placeholder="e.g. Jane Appleseed"
+            class="inputs"
+            id="cardholderName"
+            required
+          />
+          <span id="errorMessageInputName" class="errorMessage"></span>
+        </div>
+        <div class="flexColumn">
+          <label for="CARD NUMBER">CARD NUMBER</label>
+          <input
+            type="number"
+            placeholder="e.g. 1234 5678 9123 0000"
+            class="inputs"
+            required
+            id="cardNumber"
+          />
+          <span id="errorMessageInputNumber" class="errorMessage"></span>
+        </div>
+        <div class="flexRow monthYearInputs">
+          <div class="flexColumn monthYear">
+            <label for="EXP. DATE (MM/YY)">EXP. DATE (MM/YY)</label>
+            <div>
+              <input
+                type="number"
+                max="12"
+                placeholder="MM"
+                class="inputs"
+                required
+                id="monthInput"
+              />
+              <input
+                type="number"
+                min="2022"
+                placeholder="YY"
+                class="inputs"
+                required
+                id="yearInput"
+              />
+            </div>
+            <span id="errorMessageInputDate" class="errorMessage"></span>
+          </div>
+          <div class="flexColumn cvc">
+            <label for="CVC">CVC</label>
+            <input
+              type="number"
+              placeholder="e.g. 123"
+              min="100"
+              max="9999"
+              class="inputs"
+              required
+              id="cvcInput"
+            />
+            <span id="errorMessageInputCvc" class="errorMessage"></span>
+          </div>
+        </div>
+        <button type="submit" id="submitButton">CONFIRM</button>
+        <span id="errorMessageSubmitButton" class="errorMessage"></span>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
